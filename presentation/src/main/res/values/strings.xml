@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GsbWallpapers</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu">Menu</string>
+    <string name="search">Search</string>
+    <string name="input_to_search">Input to search</string>
+    <string name="photo">Photo</string>
+    <string name="set_to_wallpaper">Set to wallpaper</string>
+    <string name="add_favorite_icon">Add favorite icon</string>
+    <string name="download_icon">Download icon</string>
+    <string name="which_screen_should_i_install_this_wallpaper_on">Which screen should I install this wallpaper on?</string>
+    <string name="main_screen">Main screen</string>
+    <string name="lock_screen">Lock screen</string>
+    <string name="cancel">Cancel</string>
+    <string name="category">Category</string>
+    <string name="favorite">Favorite</string>
+    <string name="settings">Settings</string>
+    <string name="color_theme">Color theme</string>
+    <string name="disable_dark_mode">Disable dark mode</string>
+    <string name="enable_dark_mode">Enable dark mode</string>
+    <string name="arrow_back_icon">Arrow back icon</string>
+</resources>

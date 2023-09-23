@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.GsbWallpapers" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brown_night</item>
+        <item name="color">@color/gray_t_1_night</item>
+        <item name="colorPrimarySurface">@color/gray_t_2_night</item>
+        <item name="colorAccent">@color/red_night</item>
+        <item name="colorSecondary">@color/white_night</item>
+    </style>
+</resources>

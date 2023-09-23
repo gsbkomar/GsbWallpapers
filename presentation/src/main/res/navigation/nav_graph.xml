@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navFragment">
+
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="gsbkomar.gsbwallpapers.screens.categories.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_categoriesFragment_to_photoListFragment"
+            app:destination="@id/photoListFragment" />
+        <action
+            android:id="@+id/action_categoriesFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_categoriesFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_categoriesFragment_to_navFragment"
+            app:destination="@id/navFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photoListFragment"
+        android:name="gsbkomar.gsbwallpapers.screens.photo_list_category.PhotoListFragment"
+        android:label="PhotoListFragment" >
+        <action
+            android:id="@+id/action_photoListFragment_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+        <action
+            android:id="@+id/action_photoListFragment_to_fullscreenPhotoFragment"
+            app:destination="@id/fullscreenPhotoFragment" />
+        <action
+            android:id="@+id/action_photoListFragment_to_navFragment"
+            app:destination="@id/navFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullscreenPhotoFragment"
+        android:name="gsbkomar.gsbwallpapers.screens.fullscreen_photo.FullscreenPhotoFragment"
+        android:label="fragment_fullsreen_photo"
+        tools:layout="@layout/fragment_fullsreen_photo" >
+        <action
+            android:id="@+id/action_fullscreenPhotoFragment_to_photoListFragment"
+            app:destination="@id/photoListFragment" />
+        <action
+            android:id="@+id/action_fullscreenPhotoFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_fullscreenPhotoFragment_to_navFragment"
+            app:destination="@id/navFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="gsbkomar.gsbwallpapers.screens.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_navFragment"
+            app:destination="@id/navFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="gsbkomar.gsbwallpapers.screens.favorite.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_fullscreenPhotoFragment"
+            app:destination="@id/fullscreenPhotoFragment" />
+        <action
+            android:id="@+id/action_favoriteFragment_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navFragment"
+        android:name="gsbkomar.gsbwallpapers.screens.NavFragment"
+        android:label="NavFragment" >
+        <action
+            android:id="@+id/action_navFragment_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+        <action
+            android:id="@+id/action_navFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_navFragment_to_photoListFragment2"
+            app:destination="@id/photoListFragment" />
+        <action
+            android:id="@+id/action_navFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_navFragment_to_fullscreenPhotoFragment"
+            app:destination="@id/fullscreenPhotoFragment" />
+    </fragment>
+</navigation>
